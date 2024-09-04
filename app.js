@@ -53,6 +53,10 @@ app.post("/send", upload.none(), (req, res) => {
   res.send("Usuário adicionado com sucesso");
 });
 
+app.get("/send", upload.none(), (req, res) => {
+  res.send("Usuário adicionado com sucesso");
+});
+
 app.listen(process.env.PORT, () => {
   console.log(`Server Listening at http://localhost:${process.env.PORT}`);
 });
