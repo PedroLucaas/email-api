@@ -35,7 +35,7 @@ app.post("/send", upload.none(), (req, res) => {
   transporter.sendMail(
     {
       from: "geral@fineplac.com",
-      to: "pedro09031@gmail.com",
+      to: "geral@fineplac.com",
       replyTo: email,
       subject: "Contacto Site",
       text: `
