@@ -45,8 +45,8 @@ app.post("/send", upload.none(), (req, res) => {
       `,
     },
     (err, info) => {
-      console.log(info.envelope);
-      console.log(info.messageId);
+      console.log(info);
+      console.log(err);
     },
   );
 
