@@ -50,11 +50,11 @@ app.post("/send", upload.none(), (req, res) => {
     },
   );
 
-  res.send("Usuário adicionado com sucesso");
+  res.redirect("https://fineplac.com/obrigado");
 });
 
 app.get("/send", upload.none(), (req, res) => {
-  res.send("Usuário adicionado com sucesso");
+  res.send("WORKING");
 });
 
 app.listen(process.env.PORT, () => {
